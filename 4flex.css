@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header {
+    background-color: rgb(15, 71, 168);
+    /* height: 120px; */
+    padding: 30px;
+    /* width: 100%; */
+    text-align: center;
+    /* margin: 10px 20px; */
+    color: white;
+
+}
+
+.section-continar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    /* padding: 30px; */
+
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: darkgray;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    height: 100px;
+    width: 100%;
+    margin: 10px 15px;
+
+}
+
+#color1 {
+    background-color: rgb(60, 198, 228);
+}
+
+#color2 {
+    background-color: rgb(231, 187, 93);
+}
+
+#color3 {
+    background-color: rgb(93, 231, 190);
+}
+
+#color4 {
+    background-color: rgb(231, 93, 127);
+    display: none;
+}
+
+
+@media only screen and (min-width:600px) {
+    .section-continar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        width: 45%;
+    }
+
+    .last {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 45%;
+        height: 150px;
+    }
+
+
+    #color4 {
+        display: block;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width:800px) {
+    .section-continar {
+        flex-wrap: nowrap;
+    }
+
+    .section {
+        width: 100%;
+        padding: 10px
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+
+    }
+
+    .box {
+        width: 30%;
+        margin: 10px 10px;
+    }
+
+
+
+    .lastbox {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+    .footer {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .box {
+        width: 30%;
+        margin: 10px 10px;
+    }
+}

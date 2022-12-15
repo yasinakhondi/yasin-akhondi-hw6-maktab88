@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-image: url("./earth.jpeg");
+    background-size: cover;
+}
+
+.centerbox {
+    background-color: rgb(184, 207, 207);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 300px 500px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+
+.typ {
+    width: 300px;
+    height: 30px;
+    text-align: end;
+}
+
+.typ1 {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.icon {
+    height: 29px;
+    width: 30px;
+    background-color: rgb(251, 248, 248);
+    margin: -10px 0px;
+
+}
+
+
+.button {
+    background-color: chartreuse;
+    text-align: center;
+    width: 337px;
+}
+
+
+.sabtnam {
+    color: blue;
+    cursor: pointer;
+}
